@@ -1,0 +1,22 @@
+{
+  "name": "brandons_site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile-sass": "node-sass scss/main.scss css/styles.css -w --source-map true --output-style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brizism/brandons_site.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brizism/brandons_site/issues"
+  },
+  "homepage": "https://github.com/brizism/brandons_site#readme",
+  "dependencies": {
+    "node-sass": "^4.7.2"
+  }
+}
