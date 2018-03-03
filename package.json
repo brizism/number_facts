@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile-sass": "node-sass scss/main.scss css/styles.css -w --source-map true --output-style compressed"
+    "compile-sass": "node-sass public/scss/main.scss public/css/styles.css -w --source-map true --output-style compressed"
   },
   "repository": {
     "type": "git",
