@@ -11,6 +11,7 @@
     align-items: center;
     background: gold;
     border: 1px solid black;
+    cursor: pointer;
 
     &:nth-child(1) {
       grid-column: span 2;
