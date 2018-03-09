@@ -1,6 +1,9 @@
 // Init numbers
 const numbers = new Numbers();
 
+// Init ui
+const ui = new UI();
+
 const allNumbers = document.querySelectorAll('.grid__item');
 
 allNumbers.forEach(number => {
@@ -9,7 +12,7 @@ allNumbers.forEach(number => {
 
   number.addEventListener('click', () => {
     numbers.getNumbers(randomNum)
-      .then(res => console.log(res))
+      .then(res => ui.paintFacts(res))
       .catch(err => console.log(err))
   })
 })
