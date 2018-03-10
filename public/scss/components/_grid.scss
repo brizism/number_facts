@@ -1,3 +1,9 @@
+.black{ background: $black }
+.white{ background: white }
+.pink{ background: $pink }
+.purple{ background: $purple }
+.grey{ background: $grey }
+
 .grid {
   width: 100%;
   height: 100vh;
@@ -9,19 +15,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: gold;
-    border: 1px solid black;
     cursor: pointer;
 
     &:nth-child(1) {
       grid-column: span 2;
       grid-row: span 2;
-      background: tomato;
     }
 
     &:nth-child(10) {
       grid-column: span 3;
-      background: plum;
     }
   }
 }
