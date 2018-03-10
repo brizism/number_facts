@@ -16,12 +16,53 @@
       position:relative;
       padding:0;
       outline:0;
-      width: 70%;
+      width: 40%;
       height: 70%;
       top: 16%;
       box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
       animation: animatezoom 0.6s;
     }
+
+    &__wrapper {
+      width: 90%;
+      height: 90%;
+      margin: 0 auto;
+      border: 4px dashed $pink;
+      position: relative;
+      top: 5%;
+      text-align: center;
+
+      span {
+        float: right;
+        padding: 10px;
+      }
+    }
+
+    &__number {
+      font-size: 13rem;
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+      color: $purple;
+    }
+  
+    &__fact {
+      width: 80%;
+      margin: 0 auto;
+      color: $black;
+
+      p {
+        line-height: 1.5;
+      }
+    }
+  
+    &__bgnumber {
+      font-size: 60rem;
+      float: right;
+      opacity: .5;
+      color: $light-grey;
+    }
+  
+    
 }
 
 // Animation
