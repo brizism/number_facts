@@ -12,12 +12,21 @@ class UI {
       <div class="numbers-modal__wrapper">
         <span id="close">&times;</span>
         <h1 class="numbers-modal__number">${numbers.slice(0,2)}</h1>
-        <div className="numbers-modal__fact">
-          <p>${numbers.slice(3)}</p>
+        <div class="numbers-modal__fact">
+          <p>${numbers}</p>
         </div>
-        <h3 class="numbers-modal__bgnumber">${numbers.slice(0,2)}</h3>
+        <div class="numbers-modal__bgnumber">
+          <h3>${numbers.slice(0,2)}</h3>
+        </div>
       </div>
     `
     this.numbers.innerHTML = output;
+
+    this.closeModal();
+  }
+
+  closeModal(){
+    document.getElementById('close').onclick = () => this.modal.style.display = 'none';
+    window.onclick = e => e.target == this.modal ? this.modal.style.display = 'none' : this.modal;
   }
 }
