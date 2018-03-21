@@ -14,22 +14,30 @@
       margin:auto;
       background-color:#fff;
       position:relative;
-      padding:0;
+      padding: 2rem;
       outline:0;
-      width: 30%;
-      height: 60%;
-      top: 16%;
+      width: 90%;
+      height: auto;
+      top: 3%;
       box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
       animation: animatezoom 0.6s;
+
+      @media #{$mq-large} and (max-width: $bp-xlarge) {
+        width: 40%;
+      }
+
+      @media #{$mq-xlarge} {
+        width: 40%;
+        top: 20%;
+      }
     }
 
     &__wrapper {
-      width: 90%;
-      height: 90%;
+      width: 100%;
+      height: auto;
       margin: 0 auto;
       border: 2px dashed $pink;
       position: relative;
-      top: 5%;
       text-align: center;
       overflow: hidden;
 
@@ -38,18 +46,23 @@
         padding: 1rem;
         color: $purple;
         cursor: pointer;
+
+        &:hover {
+          color: $pink;
+        }
       }
     }
 
     &__number {
       font-size: 13rem;
-      padding-bottom: 5rem;
+      padding-bottom: 2rem;
       color: $purple;
       clear: both;
     }
   
     &__fact {
       width: 80%;
+      font-size: 2.8rem;
       position: relative;
       margin: 0 auto;
       color: $black;
@@ -63,8 +76,8 @@
     &__bgnumber {
 
       h3 {
-        font-size: 40rem;
-        float: right;
+        font-size: 29rem;
+        right: 3.2rem;
         color: $light-grey;
         position: relative;
         bottom: 11rem;
