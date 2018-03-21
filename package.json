@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "browser-sync public/ -w",
     "compile-sass": "node-sass public/scss/main.scss public/css/styles.css -w --source-map true --output-style compressed"
   },
   "repository": {
@@ -16,7 +17,9 @@
     "url": "https://github.com/brizism/brandons_site/issues"
   },
   "homepage": "https://github.com/brizism/brandons_site#readme",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
     "node-sass": "^4.7.2"
   }
 }
