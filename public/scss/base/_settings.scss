@@ -4,3 +4,13 @@ $purple: #5c5afb;
 $grey: #e2e2e2;
 $light-grey: #f3f8fb;
 $black: #262626;
+
+// Breakpoints
+$bp-medium: 48em;  // 768px
+$bp-large: 75em;  // 1200px
+$bp-xlarge: 120em;  // 1920px
+
+// Media Queries
+$mq-medium: "(min-width: #{$bp-medium})";
+$mq-large: "(min-width: #{$bp-large})";
+$mq-xlarge: "(min-width: #{$bp-xlarge})";
