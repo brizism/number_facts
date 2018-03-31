@@ -2,6 +2,7 @@ class UI {
   constructor(){
     this.numbers = document.getElementById('numbers-content');
     this.modal = document.getElementById('numbers-modal');
+    this.numberYear = document.getElementById('number-year');
   }
 
   // Display number facts in UI
@@ -26,6 +27,17 @@ class UI {
 
   paintYearFacts(yearNumbers, number){
     this.paintFacts(yearNumbers, number)
+  }
+
+  showMessage(message){
+    const h2 = document.createElement('h2');
+    h2.appendChild(document.createTextNode(message));
+    this.numberYear.appendChild(h2);
+
+    // Timeout after 3sec
+    setTimeout(() => {
+      h2 ? h2.remove() : h2;
+    }, 2000);
   }
 
   closeModal(){
